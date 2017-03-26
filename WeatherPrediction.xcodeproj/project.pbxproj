@@ -10,7 +10,7 @@
 		269613CED46C47F645FACD59 /* Pods_WeatherPredictionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88352644F33120DC734DA81 /* Pods_WeatherPredictionUITests.framework */; };
 		A97D43DB1DC91F4E31547ADE /* Pods_WeatherPredictionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A53469988DFD22F519587 /* Pods_WeatherPredictionTests.framework */; };
 		CA94E0531E8537DE001A3A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94E0521E8537DE001A3A06 /* AppDelegate.swift */; };
-		CA94E0551E8537DE001A3A06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94E0541E8537DE001A3A06 /* ViewController.swift */; };
+		CA94E0551E8537DE001A3A06 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94E0541E8537DE001A3A06 /* WeatherVC.swift */; };
 		CA94E0581E8537DE001A3A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA94E0561E8537DE001A3A06 /* Main.storyboard */; };
 		CA94E05A1E8537DE001A3A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA94E0591E8537DE001A3A06 /* Assets.xcassets */; };
 		CA94E05D1E8537DE001A3A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA94E05B1E8537DE001A3A06 /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		C88352644F33120DC734DA81 /* Pods_WeatherPredictionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherPredictionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA94E04F1E8537DE001A3A06 /* WeatherPrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA94E0521E8537DE001A3A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA94E0541E8537DE001A3A06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA94E0541E8537DE001A3A06 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		CA94E0571E8537DE001A3A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA94E0591E8537DE001A3A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA94E05C1E8537DE001A3A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				CA94E0521E8537DE001A3A06 /* AppDelegate.swift */,
-				CA94E0541E8537DE001A3A06 /* ViewController.swift */,
+				CA94E0541E8537DE001A3A06 /* WeatherVC.swift */,
 				CA94E0561E8537DE001A3A06 /* Main.storyboard */,
 				CA94E0591E8537DE001A3A06 /* Assets.xcassets */,
 				CA94E05B1E8537DE001A3A06 /* LaunchScreen.storyboard */,
@@ -449,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA94E0551E8537DE001A3A06 /* ViewController.swift in Sources */,
+				CA94E0551E8537DE001A3A06 /* WeatherVC.swift in Sources */,
 				CA94E0531E8537DE001A3A06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,6 +707,7 @@
 				CA94E0791E8537DE001A3A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA94E07A1E8537DE001A3A06 /* Build configuration list for PBXNativeTarget "WeatherPredictionTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +716,7 @@
 				CA94E07C1E8537DE001A3A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA94E07D1E8537DE001A3A06 /* Build configuration list for PBXNativeTarget "WeatherPredictionUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +725,7 @@
 				CA94E07F1E8537DE001A3A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
