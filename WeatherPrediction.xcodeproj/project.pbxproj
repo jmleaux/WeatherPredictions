@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		269613CED46C47F645FACD59 /* Pods_WeatherPredictionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88352644F33120DC734DA81 /* Pods_WeatherPredictionUITests.framework */; };
 		A97D43DB1DC91F4E31547ADE /* Pods_WeatherPredictionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A53469988DFD22F519587 /* Pods_WeatherPredictionTests.framework */; };
+		CA76DAC31E8D6FAA001204DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76DAC21E8D6FAA001204DC /* Constants.swift */; };
 		CA94E0531E8537DE001A3A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94E0521E8537DE001A3A06 /* AppDelegate.swift */; };
 		CA94E0551E8537DE001A3A06 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94E0541E8537DE001A3A06 /* WeatherVC.swift */; };
 		CA94E0581E8537DE001A3A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA94E0561E8537DE001A3A06 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		B65A53469988DFD22F519587 /* Pods_WeatherPredictionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherPredictionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1D34450BE0ADA044878DCF /* Pods-WeatherPredictionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherPredictionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherPredictionUITests/Pods-WeatherPredictionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C88352644F33120DC734DA81 /* Pods_WeatherPredictionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherPredictionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA76DAC21E8D6FAA001204DC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CA94E04F1E8537DE001A3A06 /* WeatherPrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA94E0521E8537DE001A3A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA94E0541E8537DE001A3A06 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				CA94E0591E8537DE001A3A06 /* Assets.xcassets */,
 				CA94E05B1E8537DE001A3A06 /* LaunchScreen.storyboard */,
 				CA94E05E1E8537DE001A3A06 /* Info.plist */,
+				CA76DAC21E8D6FAA001204DC /* Constants.swift */,
 			);
 			path = WeatherPrediction;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			files = (
 				CA94E0551E8537DE001A3A06 /* WeatherVC.swift in Sources */,
 				CA94E0531E8537DE001A3A06 /* AppDelegate.swift in Sources */,
+				CA76DAC31E8D6FAA001204DC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
