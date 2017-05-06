@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -20,17 +21,45 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var currentWeather = CurrentWeather()
+//    var forecast = Forecast()
+    var forecasts = [Forecast]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate = self
         tableView.dataSource = self
         
+        currentWeather = CurrentWeather()
+//        forecast = Forecast()
+        
         currentWeather.downloadWeatherDetails {
             print("about to call self.updateMainUI")
-            self.updateMainUI()
+            self.downloadForecastData {
+                self.updateMainUI()
+            }
         }
-        
+    }
+    
+    func downloadForecastData(completed: @escaping DownloadComplete) {
+//        downloading forecast weather data for table view
+//        let forecastURL = URL(string: FORECAST_URL)
+//        Alamofire.request(forecastURL).respon
+        Alamofire.request(FORECAST_URL).responseJSON { response in
+            let result = response.result
+            
+            if let dict = result.value as? Dictionary<String, AnyObject> {
+                if let list = dict["list"] as? [Dictionary<String, AnyObject>] {
+                    
+                    for obj in list {
+                        let forecast = Forecast(weatherDict: obj)
+                        self.forecasts.append(forecast)
+                        print(obj)
+                    }
+                }
+            }
+            completed()
+        }
     }
 
     // the three functions below are REQUIRED whenever we are using UITableViewDelegate
@@ -49,7 +78,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func updateMainUI() {
         dateLabel.text = currentWeather.date
-//        currentTempLabel.text = "\(currentWeather.currentTemp)°C"
         currentTempLabel.text = String(format: "%.1f", currentWeather.currentTemp) + "°C"
         currentWeatherTypeLabel.text = currentWeather.weatherType
         cityLabel.text = currentWeather.cityName
