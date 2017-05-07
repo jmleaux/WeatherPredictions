@@ -20,6 +20,7 @@
 		CA94E0731E8537DE001A3A06 /* WeatherPredictionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94E0721E8537DE001A3A06 /* WeatherPredictionUITests.swift */; };
 		CAFB46CE1EBDAEC400C28689 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB46CD1EBDAEC400C28689 /* Forecast.swift */; };
 		CAFB46D01EBDD96600C28689 /* WeatherCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB46CF1EBDD96600C28689 /* WeatherCellTableViewCell.swift */; };
+		CAFB46D21EBF824600C28689 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB46D11EBF824600C28689 /* Location.swift */; };
 		FE486FC32157AA5110C74C8B /* Pods_WeatherPrediction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9667606E46EE2EF9C9A257 /* Pods_WeatherPrediction.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		CA94E0741E8537DE001A3A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAFB46CD1EBDAEC400C28689 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		CAFB46CF1EBDD96600C28689 /* WeatherCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCellTableViewCell.swift; sourceTree = "<group>"; };
+		CAFB46D11EBF824600C28689 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		FC9667606E46EE2EF9C9A257 /* Pods_WeatherPrediction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherPrediction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				CA11341A1EA258670018B11B /* CurrentWeather.swift */,
 				CAFB46CD1EBDAEC400C28689 /* Forecast.swift */,
 				CAFB46CF1EBDD96600C28689 /* WeatherCellTableViewCell.swift */,
+				CAFB46D11EBF824600C28689 /* Location.swift */,
 			);
 			path = WeatherPrediction;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				CA11341B1EA258670018B11B /* CurrentWeather.swift in Sources */,
 				CA76DAC31E8D6FAA001204DC /* Constants.swift in Sources */,
 				CAFB46CE1EBDAEC400C28689 /* Forecast.swift in Sources */,
+				CAFB46D21EBF824600C28689 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
