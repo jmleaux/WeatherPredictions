@@ -50,10 +50,13 @@ class Forecast {
         
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
             if let min = temp["min"] as? Double {
-                self._lowTemp = "\(kelvinToCelsius(min))"
+//                self._lowTemp = "\(kelvinToCelsius(min))"
+                self._lowTemp = String(format: "%.1f", kelvinToCelsius(min)) + "°C"
             }
             if let max = temp["max"] as? Double {
-                self._highTemp = "\(kelvinToCelsius(max))"
+//                self._highTemp = "\(kelvinToCelsius(max))"
+                self._highTemp = String(format: "%.1f", kelvinToCelsius(max)) + "°C"
+
             }
         }
     

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherPrediction/WeatherVC.swift"
+            timestampString = "515750092.051274"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherPrediction.WeatherVC.viewDidLoad () -&gt; ()"
+                  moduleName = "WeatherPrediction"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmlowe/Dropbox/Documents/Projects/Learning%20Swift%20Projects/Core_iOS/WeatherPrediction/WeatherPrediction/WeatherPrediction/WeatherVC.swift"
+                  timestampString = "515746761.62715"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "477">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherPrediction.WeatherVC.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "WeatherPrediction"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmlowe/Dropbox/Documents/Projects/Learning%20Swift%20Projects/Core_iOS/WeatherPrediction/WeatherPrediction/WeatherPrediction/WeatherVC.swift"
+                  timestampString = "515746761.629257"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherPrediction/Forecast.swift"
+            timestampString = "515865428.382677"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "dayOfTheWeek()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
