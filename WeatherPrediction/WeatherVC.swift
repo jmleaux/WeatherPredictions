@@ -72,10 +72,10 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
 
         
 //        print(currentLocation)
-        print("in locationAuthStatus, lat and long are", Location.sharedInstance.latitude, Location.sharedInstance.longitude)
+//        print("in locationAuthStatus, lat and long are", Location.sharedInstance.latitude, Location.sharedInstance.longitude)
 
-        print(CURRENT_WEATHER_URL)
-        print(FORECAST_URL)
+//        print(CURRENT_WEATHER_URL)
+//        print(FORECAST_URL)
 
     }
     
@@ -93,7 +93,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
                     for obj in list {
                         let forecast = Forecast(weatherDict: obj)
                         self.forecasts.append(forecast)
-                        print(obj)
+//                        print(obj)
                     }
                     self.forecasts.remove(at: 0)    // need to remove first forecast because that is TODAY's forecast
                     self.tableView.reloadData()
@@ -126,7 +126,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         currentTempLabel.text = String(format: "%.1f", currentWeather.currentTemp) + "°C"
         currentWeatherTypeLabel.text = currentWeather.weatherType
         cityLabel.text = currentWeather.cityName
-        print(currentWeather.cityName)
+//        print(currentWeather.cityName)
         currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
     }
 }
